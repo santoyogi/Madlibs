@@ -1,0 +1,18 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            Beauty vloggers have decided that putting lotion on your face wasn’t
+            enough. Now they recommend you put {{ item.noun }} on your face to
+            clean it. After that, they said you should wear {{ item.bug }}s
+            to create a {{ item.adjective1 }} glow. Once you are done with that
+            it is important to put {{ item.food }} for moisture. Do you feel
+            {{ item.adjective2 }} yet?? If not, maybe try the new toner made of
+            fresh {{ item.vegetable }} juice. Great! Now you look as
+            {{ item.adjective3 }} as ever, congratulations!
+        </p>
+    </div>
+</form>
+{% endblock %}

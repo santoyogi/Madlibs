@@ -1,0 +1,17 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            Everybody knows cats are {{ item.adjective1 }} and Mr.{{item.food1 }}
+            was no exception. All day he would {{ item.verb1 }} and
+            {{ item.verb2 }}. His owners loved him very much as he was the most
+            {{ item.adjective2 }} cat they ever met. His favourite activity is
+            {{ item.hobby }}, his favourite food is {{ item.food2 }} and he loves
+            {{ item.noun }} the most. Mr.{{ item.food1 }} is a very
+            {{ item.emotion }} cat!
+        </p>
+    </div>
+</form>
+{% endblock %}

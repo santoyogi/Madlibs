@@ -1,0 +1,18 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            They say {{ item.fruit }} is part of a balanced breakfast. So, Sam had
+            {{ item.fruit }} every day, and he also had {{ item.food }} with it.
+            As well as a {{ item.liquid }} to wash it down, but it didn’t stop
+            there. He also enjoyed some good ole {{ item.object }} on the side.
+            Some {{ item.noun }} to sprinkle on top. And of course a good ole
+            {{ item.animal }} to finish it off. After his breakfast, he felt
+            {{ item.adjective1 }} so he would go for a daily
+            {{ item.actionVerb }}. Sam has a {{ item.adjective2 }} morning routine!
+        </p>
+    </div>
+</form>
+{% endblock %}

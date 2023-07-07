@@ -1,0 +1,15 @@
+{% extends 'story/base.html' %}
+
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-form">
+        <h4>Input the words below, press save and then press generate</h4>
+        {{ form }}
+    </div>
+    <div class="save">
+        <button type="submit">Save</button>
+        <a class="generate" href="/story/egg_story/1">generate</a>
+    </div>
+</form>
+{% endblock %}

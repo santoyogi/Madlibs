@@ -1,0 +1,18 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            Breaking news! {{ item.person }} was seen giving a small
+            {{ item.animal }} CPR at {{ item.restaurant }} earlier today.
+            When interviewed they said, “I just couldn’t help myself. The
+            {{ item.animal }} was in danger, and they were just so
+            {{ item.adjective1 }} and {{ item.adjective2 }}, how could I not?”.
+            For their bravery, they were given an award of {{ item.noun }} and
+            {{ item.number }} dollars. Maybe this will be a lesson for everyone.
+            When there is an animal in need, make sure you {{ item.verb }} it.
+        </p>
+    </div>
+</form>
+{% endblock %}

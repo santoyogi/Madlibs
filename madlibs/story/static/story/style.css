@@ -1,0 +1,83 @@
+.body{
+    background-color: lavender;
+}
+
+h4{
+    font-family: "Cooper Black"
+}
+
+form{
+    font-family: Calibri;
+}
+
+.mad{
+    text-align: center;
+    font-family: fantasy;
+}
+
+div{
+    color: black;
+    border: solid black;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 10px;
+    background-color: #E1F7FA;
+}
+
+div:hover{
+    background-color: lightskyblue;
+}
+
+.navbar-brand{
+    font-family: "Yu Gothic UI Semibold"
+}
+
+.save{
+    background-color: #A4B8DA;
+    width:400px;
+    margin: 10px auto;
+}
+
+.div-form{
+    background-color: #A4B8DA;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.div-form:hover{
+    background-color: #A4B8DA;;
+}
+
+.save:hover{
+    background-color: #A4B8DA;;
+}
+
+.generate{
+    border:black solid 2px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+button:hover{
+    background-color: lavender;
+}
+
+.generate:hover{
+    background-color: lavender;
+}
+
+.div-story{
+    background-color: #BDC0F9;
+    width: 700px;
+    margin: 10px auto;
+    font-size: 24px;
+    font-family: "Yu Gothic UI Semibold";
+}
+
+.div-story:hover{
+    background-color: #BDC0F9;
+    box-shadow: 20px 10px 10px #05F9EE;
+}

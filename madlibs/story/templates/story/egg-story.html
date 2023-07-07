@@ -1,0 +1,24 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            There once was a very {{ item.adjective }} egg. His name was
+            {{ item.maleName }} and they were so {{ item.adjective }} that
+            they never had a girlfriend. However, {{ item.maleName }} was
+            determined to change that. So he went on eggHarmony.com and there
+            he found a beautiful {{ item.eggItem }}. Her name was Eggberta and
+            she was just what {{ item.maleName }} was looking for. Their date
+            would be that following Saturday so {{ item.maleName }} had plenty
+            of time to prepare. The first thing they did was paint their shell
+            {{ item.color }}. Then they cut their hair to get a {{ item.hairstyle }}
+            and now they were ready to go. That Saturday {{ item.maleName }} and
+            Eggberta met up at {{ item.place }}. There, they ate {{ item.food }}
+            and hit it off really well. At the end of the date, {{ item.maleName }}
+            asked Eggberta if she would marry him, and she said
+            {{ item.yesOrNo }}—the end!
+        </p>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            In an emergency, everybody knows the first thing you do is
+            {{ item.actionVerb1 }} so that {{ item.noun1 }} can be avoided.
+            Next, it is important to call a {{ item.jobTitle }} so they can
+            come and assist. However, if that isn’t an option you can try to
+            {{ item.verb }} on your own. Everybody will think you are a
+            {{ item.adjective1 }} hero and you might get a {{ item.noun2 }}
+            for your bravery. It’s {{ item.adjective2 }} to be recognized for
+            your efforts, so it’s important to always try your very
+            {{ item.adjective3 }} in the case of an emergency.
+        </p>
+    </div>
+</form>
+{% endblock %}

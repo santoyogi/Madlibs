@@ -1,0 +1,25 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            Way long ago there was a {{ item.noun }} that was rumoured
+            to be haunted. The story behind this place was that at the
+            beginning of time, there were {{ item.mythicalCreature }} who
+            roamed the land. They were very {{ item.adjective1 }} so the
+            people feared them. However, there was a young boy who wanted
+            to befriend them as he was a {{ item.adjective2 }} lad. On
+            one of the nights that he went searching for
+            {{ item.mythicalCreature }}s it was very {{ item.adjective3 }}
+            and dark. His mother warned him not to go, but he was too stubborn.
+            Unfortunately for him, this would be his {{ item.superlative }}
+            mistake. Eventually, this boy came face to face with a
+            {{ item.mythicalCreature }} and they were as {{ item.adjective1 }}
+            as everyone said they were. He {{ item.action }}ed and that was the last
+            anyone heard of him. Now, he roams the {{ item.noun }} endlessly
+            searching for the {{ item.mythicalCreature }}s.
+        </p>
+    </div>
+</form>
+{% endblock %}

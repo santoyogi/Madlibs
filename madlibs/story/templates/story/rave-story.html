@@ -1,0 +1,26 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            {{ item.name }} wanted to party. They wanted to dance,
+            {{ item.action1 }}, shake and mingle. {{ item.name }}
+            ordered an uber and made their way to the
+            {{ item.adjective1 }} monkey, a local club. Inside,
+            the music was bumping, the people were mixing and the
+            air was full of energy. {{ item.name }} was there for
+            one thing and one thing only. They wanted to
+            {{ item.action2 }}. And {{ item.action2 }} they did.
+            They {{ item.action2 }}ed so hard that their
+            {{ item.object }} flew off and they began to sweat.
+            They perspired so hard that there was a puddle forming
+            around them. Everyone noticed and gave them a
+            {{ item.negativeVerb }} look. However, they were no match
+            for this {{ item.adjective2 }} animal. Eventually, the
+            whole club filled with sweat and {{ item.liquid }}.
+            Soon everyone drowned and died—the end.
+        </p>
+    </div>
+</form>
+{% endblock %}

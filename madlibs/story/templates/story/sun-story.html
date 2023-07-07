@@ -1,0 +1,22 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            Little Stacy always wanted to go to space. One day, outside in her
+            yard, was a magical {{ item.vehicle }}. Stacy knew this was her chance,
+            so she got in and zoooooom! The {{ item.vehicle }} flew into the sky
+            and went straight for the sun. “Oh no” little Stacy thought, “My
+            {{ item.bodyPart }} is going to burn up!”. When she landed it was
+            {{ item.adjective1 }} but it wasn’t hot. In the distance, Stacy
+            could see a group of {{ item.animal }}s glowing bright and orange
+            unlike back on earth. She {{ item.verb }} around frolicking in
+            the {{ item.plant }} that were as soft as a flame. She was very
+            {{ item.emotion }} and decided to go home. So she got back in the
+            {{ item.vehicle }} and when she landed back home she had a
+            {{ item.adjective2 }} sunburn.
+        </p>
+    </div>
+</form>
+{% endblock %}

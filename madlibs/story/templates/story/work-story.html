@@ -1,0 +1,17 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            Tim worked as a {{ item.job }}. He loved his job so much that at work he
+            would {{ item.verb1 }} all day. His coworkers thought he was a
+            {{ item.adjective1 }} guy. So much so that they promoted him to a
+            {{ item.noun }} supervisor. He was {{ item.adjective2 }} at what he
+            did and that made him very {{ item.emotion }}. Tim will never
+            {{ item.verb2 }} his job.
+        </p>
+    </div>
+
+</form>
+{% endblock %}

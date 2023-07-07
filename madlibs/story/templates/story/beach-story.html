@@ -1,0 +1,16 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            A family went to the beach on a {{ item.adjective1 }} day. The sun
+            was bright and the water was cool. They brought {{ item.food }}
+            to eat and a {{ item.object }} to lay on. They played in the water
+            and even found time to {{ item.verb }}. In the water, they saw a
+            {{ item.animal }} and on the shore, they saw some {{ item.plants }}.
+            They had a {{ item.adjective2 }} day and would return next week.
+        </p>
+    </div>
+</form>
+{% endblock %}

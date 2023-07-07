@@ -1,0 +1,22 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            This little piggy went to market, this little piggy went home, and this
+            little piggy went wee! Wee! Wee! All the way to the  {{ item.place }}.
+            This little piggy demanded the employee give them all their
+            {{ item.object }}. So the employee called the police. This little
+            piggy ran out of the building to save their bacon. Outside there
+            was a {{ item.vehicle }} so, they got in and stepped on it. Vrooooooom,
+            this little piggy decided to leave the country and go to
+            {{ item.country }}. On the way there they stopped at
+            {{ item.restaurant }} to eat some {{ item.porkItem }}. Then again this
+            little piggy was on the road. Once at the border, this little piggy ran
+            through the fences and began their new life. They would now go by the
+            Sir {{ item.name }} the third.
+        </p>
+    </div>
+</form>
+{% endblock %}

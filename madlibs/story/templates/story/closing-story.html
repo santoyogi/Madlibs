@@ -1,0 +1,18 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            The hour is {{ item.number }} O clock, and it is time to close
+            {{ item.place }}. They say this time of day is {{ item.adjective1 }}
+            but the closing staff is one of the most {{ item.adjective2 }} out
+            there. They have experience and know just what to do. Quickly they take
+            out the {{ item.object1 }}s and put away the {{ item.object2 }}s.
+            Once that is done, it is important that they count all their
+            {{ item.object3 }}s so they can finally go home. The next day at
+            closing they will {{ item.verb }} it all over again.
+        </p>
+    </div>
+</form>
+{% endblock %}

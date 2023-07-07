@@ -1,0 +1,21 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            The {{ item.LastName }} couple were expecting a new baby very soon.
+            They hoped it would have {{ item.color1 }} colored eyes and
+            {{ item.color2 }} hair. The day the baby arrived was very
+            {{ item.adjective1 }}. The baby looked nothing as expected. First
+            of all, it wasn’t a baby at all! It was actually a {{ item.animal }}.
+            with {{ item.color3 }} beady eyes, a {{ item.adjective2 }} nose and
+            huge teeth. The couple were shocked and wondered if they should
+            {{ item.verb }} it. But this was their beloved baby, and they decided
+            against it. Surprisingly they raised the baby happily, and it grew up
+            to be a very successful {{ item.jobTitle }}!
+        </p>
+    </div>
+
+</form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'story/base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="div-story">
+        <p>
+            In the Nation of Procrasti, the people are very {{ item.adjective1 }}.
+            You can always count on them to {{ item.actionVerb1 }}. They are not
+            {{ item.adjective2 }} people but they do have a couple flaws. For
+            example, they always wait last minute. They also suck at
+            {{ item.actionVerb2 }}ing when needed most. However, they have good
+            {{ item.noun1 }}s and really {{ item.verb }} for eachother. That is
+            the reason that this nation is rated top {{ item.noun2 }} in the world
+            and should be on everybody's bucket list.
+        </p>
+</div>
+</form>
+{% endblock %}
